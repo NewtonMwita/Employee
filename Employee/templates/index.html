@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Appraisal System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            outline: none;
+        }
+
+        .login {
+            background: #007BFF;
+            color: white;
+            box-shadow: 0px 5px 15px rgba(0, 123, 255, 0.4);
+        }
+
+        .login:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.6);
+        }
+
+        .register {
+            background: #28A745;
+            color: white;
+            box-shadow: 0px 5px 15px rgba(40, 167, 69, 0.4);
+        }
+
+        .register:hover {
+            background: #1e7e34;
+            transform: translateY(-3px);
+            box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.6);
+        }
+
+        /* Subtle hover effect */
+        .btn:hover {
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .container {
+                width: 90%;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Employee Appraisal System</h1>
+        <button class="btn login" onclick="window.location.href='/login'">Login</button>
+        <button class="btn register" onclick="window.location.href='/register'">Register</button>
+    </div>
+
+
+</body>
+</html>
